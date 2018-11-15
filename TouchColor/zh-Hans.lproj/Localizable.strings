@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  TouchColor
+
+  Created by roy on 2018/9/21.
+  Copyright © 2018年 roy. All rights reserved.
+*/
+
+"new_game" = "新游戏";
+"ranking" = "级别";
+"score" = "得分";
+"resume" = "继续";
+"quit" = "返回首页";
+"pause" = "暂停";
+"retry" = "再来一局";
+"your_score" = "得分";
+"info_description" = "信息描述";
+"authors" = "作者";
+"github" = "github";
+"dribbble" = "滴下";
+"twitter" = "推特";
+"show_profile" = "显示描述";
+"cancel" = "取消";

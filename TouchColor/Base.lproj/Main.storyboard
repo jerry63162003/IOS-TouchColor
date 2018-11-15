@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="首页" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-Tz-e1c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAn-hO-HOk">
+                                <rect key="frame" x="119" y="340" width="137" height="69"/>
+                                <state key="normal" image="玩法说明按钮"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awH-az-P6q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnH-Sa-Z93">
+                                <rect key="frame" x="124" y="417" width="126" height="50"/>
+                                <state key="normal" image="开始游戏"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zyi-Y7-7Oi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GS-NU-7Cc">
+                                <rect key="frame" x="160" y="487" width="54" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.023529411764705882" green="0.9882352941176471" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuB-NS-cbi">
+                                <rect key="frame" x="319" y="27" width="33" height="33"/>
+                                <state key="normal" image="设置"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlR-uR-LDM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RBb-Tz-e1c" secondAttribute="trailing" id="7Td-fI-ppA"/>
+                            <constraint firstAttribute="bottom" secondItem="RBb-Tz-e1c" secondAttribute="bottom" id="NML-Re-jMQ"/>
+                            <constraint firstItem="RnH-Sa-Z93" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="108.5" id="bSi-CL-wgj"/>
+                            <constraint firstItem="wAn-hO-HOk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="41" id="heL-Rq-nZl"/>
+                            <constraint firstItem="GuB-NS-cbi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="pal-Qy-xi3"/>
+                            <constraint firstItem="RBb-Tz-e1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qbL-ef-nnP"/>
+                            <constraint firstItem="wAn-hO-HOk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rbM-r1-05W"/>
+                            <constraint firstItem="RnH-Sa-Z93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uHs-EB-QEW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GuB-NS-cbi" secondAttribute="trailing" constant="23" id="v1e-14-Wwg"/>
+                            <constraint firstItem="RBb-Tz-e1c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xUb-Tt-DL6"/>
+                            <constraint firstItem="2GS-NU-7Cc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yho-Rq-lef"/>
+                            <constraint firstItem="2GS-NU-7Cc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="166.5" id="yqM-mz-Srs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="2GS-NU-7Cc" id="Fse-IW-zmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="开始游戏" width="126" height="50"/>
+        <image name="玩法说明按钮" width="137" height="69"/>
+        <image name="设置" width="33" height="33"/>
+        <image name="首页" width="375" height="667"/>
+    </resources>
+</document>

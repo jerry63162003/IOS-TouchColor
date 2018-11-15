@@ -1,0 +1,1363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90A951637F378BF26889C6C4 /* Pods_TouchColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3EB04FC138CF028B9228F0 /* Pods_TouchColor.framework */; };
+		B01394242158D64E001E1454 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01394232158D64E001E1454 /* WebViewController.swift */; };
+		B04D4AD42154A3090007D47F /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D4AD32154A3080007D47F /* GameConfig.swift */; };
+		B04D4AD72154F5FD0007D47F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B04D4AD92154F5FD0007D47F /* Localizable.strings */; };
+		B0BAAACC215334AE002A6803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAACB215334AE002A6803 /* AppDelegate.swift */; };
+		B0BAAACE215334AE002A6803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAACD215334AE002A6803 /* ViewController.swift */; };
+		B0BAAAD1215334AE002A6803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BAAACF215334AE002A6803 /* Main.storyboard */; };
+		B0BAAAD3215334AE002A6803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BAAAD2215334AE002A6803 /* Assets.xcassets */; };
+		B0BAAAD6215334AE002A6803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BAAAD4215334AE002A6803 /* LaunchScreen.storyboard */; };
+		B0BAAAEC215334AE002A6803 /* TouchColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAAEB215334AE002A6803 /* TouchColorUITests.swift */; };
+		B0BAAB2F215337C5002A6803 /* BoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB20215337C5002A6803 /* BoardDelegate.swift */; };
+		B0BAAB30215337C5002A6803 /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB21215337C5002A6803 /* GameDelegate.swift */; };
+		B0BAAB31215337C5002A6803 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB22215337C5002A6803 /* Board.swift */; };
+		B0BAAB32215337C5002A6803 /* Array+Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB24215337C5002A6803 /* Array+Slot.swift */; };
+		B0BAAB33215337C5002A6803 /* Board+SlotDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB25215337C5002A6803 /* Board+SlotDelegate.swift */; };
+		B0BAAB34215337C5002A6803 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB26215337C5002A6803 /* Game.swift */; };
+		B0BAAB35215337C5002A6803 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB27215337C5002A6803 /* Slot.swift */; };
+		B0BAAB36215337C5002A6803 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB28215337C5002A6803 /* DifficultyLevel.swift */; };
+		B0BAAB37215337C5002A6803 /* CircleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB29215337C5002A6803 /* CircleType.swift */; };
+		B0BAAB38215337C5002A6803 /* SlotDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB2A215337C5002A6803 /* SlotDelegate.swift */; };
+		B0BAAB39215337C5002A6803 /* Game+BoardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB2B215337C5002A6803 /* Game+BoardDelegate.swift */; };
+		B0BAAB3A215337C5002A6803 /* BoardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB2C215337C5002A6803 /* BoardSize.swift */; };
+		B0BAAB3B215337C5002A6803 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB2D215337C5002A6803 /* Circle.swift */; };
+		B0BAAB3C215337C5002A6803 /* SlotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB2E215337C5002A6803 /* SlotLocation.swift */; };
+		B0BAAB41215337E0002A6803 /* Array+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB3E215337E0002A6803 /* Array+Random.swift */; };
+		B0BAAB42215337E0002A6803 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB3F215337E0002A6803 /* String+Localized.swift */; };
+		B0BAAB43215337E0002A6803 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB40215337E0002A6803 /* GameTimer.swift */; };
+		B0BAAB8521533857002A6803 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB4621533857002A6803 /* ViewControllerPresenter.swift */; };
+		B0BAAB8621533857002A6803 /* UIView+CAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB4921533857002A6803 /* UIView+CAAnimation.swift */; };
+		B0BAAB8721533857002A6803 /* UIView+MoveToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB4A21533857002A6803 /* UIView+MoveToSuperview.swift */; };
+		B0BAAB8821533857002A6803 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB4D21533857002A6803 /* GameOverViewController.swift */; };
+		B0BAAB8921533857002A6803 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB4E21533857002A6803 /* GameOverView.swift */; };
+		B0BAAB8A21533857002A6803 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5021533857002A6803 /* StartView.swift */; };
+		B0BAAB8B21533857002A6803 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5121533857002A6803 /* StartViewController.swift */; };
+		B0BAAB8C21533857002A6803 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5321533857002A6803 /* GameViewController.swift */; };
+		B0BAAB8D21533857002A6803 /* GameViewController+GameOverViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5521533857002A6803 /* GameViewController+GameOverViewControllerDelegate.swift */; };
+		B0BAAB8E21533857002A6803 /* GameViewController+MenuViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5621533857002A6803 /* GameViewController+MenuViewControllerDelegate.swift */; };
+		B0BAAB8F21533857002A6803 /* GameViewController+GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5721533857002A6803 /* GameViewController+GameDelegate.swift */; };
+		B0BAAB9021533857002A6803 /* GameViewController+GameViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5821533857002A6803 /* GameViewController+GameViewDelegate.swift */; };
+		B0BAAB9121533857002A6803 /* GameBoardView+MaxSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5A21533857002A6803 /* GameBoardView+MaxSize.swift */; };
+		B0BAAB9221533857002A6803 /* GameViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5B21533857002A6803 /* GameViewDelegate.swift */; };
+		B0BAAB9321533857002A6803 /* GameBoardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5C21533857002A6803 /* GameBoardViewDelegate.swift */; };
+		B0BAAB9421533857002A6803 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5D21533857002A6803 /* GameView.swift */; };
+		B0BAAB9521533857002A6803 /* GameView+GameBoardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5E21533857002A6803 /* GameView+GameBoardViewDelegate.swift */; };
+		B0BAAB9621533857002A6803 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB5F21533857002A6803 /* GameBoardView.swift */; };
+		B0BAAB9721533857002A6803 /* GameBoardView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6021533857002A6803 /* GameBoardView+Subviews.swift */; };
+		B0BAAB9821533857002A6803 /* GameBoardSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6121533857002A6803 /* GameBoardSlotView.swift */; };
+		B0BAAB9921533857002A6803 /* GameBoardView+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6221533857002A6803 /* GameBoardView+Audio.swift */; };
+		B0BAAB9A21533857002A6803 /* GameBoardView+TouchHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6321533857002A6803 /* GameBoardView+TouchHandling.swift */; };
+		B0BAAB9B21533857002A6803 /* GameViewController+GameAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6521533857002A6803 /* GameViewController+GameAnalytics.swift */; };
+		B0BAAB9C21533857002A6803 /* GameViewController+GameKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6621533857002A6803 /* GameViewController+GameKit.swift */; };
+		B0BAAB9D21533857002A6803 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6821533857002A6803 /* InfoViewController.swift */; };
+		B0BAAB9E21533857002A6803 /* InfoViewController+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6921533857002A6803 /* InfoViewController+AlertController.swift */; };
+		B0BAAB9F21533857002A6803 /* UrlOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6B21533857002A6803 /* UrlOpener.swift */; };
+		B0BAABA021533857002A6803 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6D21533857002A6803 /* InfoView.swift */; };
+		B0BAABA121533857002A6803 /* LogoDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6E21533857002A6803 /* LogoDescriptionView.swift */; };
+		B0BAABA221533857002A6803 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB6F21533857002A6803 /* AuthorView.swift */; };
+		B0BAABA321533857002A6803 /* LineViewAuthors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7021533857002A6803 /* LineViewAuthors.swift */; };
+		B0BAABA421533857002A6803 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7221533857002A6803 /* MenuView.swift */; };
+		B0BAABA521533857002A6803 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7321533857002A6803 /* MenuViewController.swift */; };
+		B0BAABA621533857002A6803 /* Button+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7621533857002A6803 /* Button+BackgroundColor.swift */; };
+		B0BAABA721533857002A6803 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7721533857002A6803 /* Button.swift */; };
+		B0BAABA821533857002A6803 /* CircleView+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7921533857002A6803 /* CircleView+Circle.swift */; };
+		B0BAABA921533857002A6803 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7A21533857002A6803 /* CircleView.swift */; };
+		B0BAABAA21533857002A6803 /* CircleViewDragger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7B21533857002A6803 /* CircleViewDragger.swift */; };
+		B0BAABAB21533857002A6803 /* UIFont_Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7D21533857002A6803 /* UIFont_Font.swift */; };
+		B0BAABAC21533857002A6803 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7E21533857002A6803 /* KeyConstants.swift */; };
+		B0BAABAD21533857002A6803 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB7F21533857002A6803 /* Asset.swift */; };
+		B0BAABAE21533857002A6803 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB8021533857002A6803 /* Color.swift */; };
+		B0BAABAF21533857002A6803 /* GAIDictionaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB8221533857002A6803 /* GAIDictionaryFactory.swift */; };
+		B0BAABB021533857002A6803 /* AlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB8321533857002A6803 /* AlertControllerFactory.swift */; };
+		B0BAABB121533857002A6803 /* AlertActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAAB8421533857002A6803 /* AlertActionFactory.swift */; };
+		B0F5AD14215341D9008BA5EB /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD13215341D9008BA5EB /* Author.swift */; };
+		B0F5AD2B21534612008BA5EB /* StringLocalizedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1721534612008BA5EB /* StringLocalizedSpec.swift */; };
+		B0F5AD2C21534612008BA5EB /* AuthorLoginFromUrlSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1821534612008BA5EB /* AuthorLoginFromUrlSpec.swift */; };
+		B0F5AD2D21534612008BA5EB /* ArrayRandomSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1921534612008BA5EB /* ArrayRandomSpec.swift */; };
+		B0F5AD2E21534612008BA5EB /* DifficultyLevelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1B21534612008BA5EB /* DifficultyLevelSpec.swift */; };
+		B0F5AD2F21534612008BA5EB /* TrackerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1C21534612008BA5EB /* TrackerSpec.swift */; };
+		B0F5AD3021534612008BA5EB /* GameViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1E21534612008BA5EB /* GameViewControllerSpec.swift */; };
+		B0F5AD3121534612008BA5EB /* GameOverViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD1F21534612008BA5EB /* GameOverViewControllerSpec.swift */; };
+		B0F5AD3221534612008BA5EB /* StartViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2021534612008BA5EB /* StartViewControllerSpec.swift */; };
+		B0F5AD3321534612008BA5EB /* InfoViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2121534612008BA5EB /* InfoViewControllerSpec.swift */; };
+		B0F5AD3421534612008BA5EB /* MenuViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2221534612008BA5EB /* MenuViewControllerSpec.swift */; };
+		B0F5AD3521534612008BA5EB /* FakeAuthorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2421534612008BA5EB /* FakeAuthorProvider.swift */; };
+		B0F5AD3621534612008BA5EB /* GAIDictionaryFactoryFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2521534612008BA5EB /* GAIDictionaryFactoryFake.swift */; };
+		B0F5AD3721534612008BA5EB /* UrlOpenerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2721534612008BA5EB /* UrlOpenerSpy.swift */; };
+		B0F5AD3821534612008BA5EB /* GAITrackerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2821534612008BA5EB /* GAITrackerSpy.swift */; };
+		B0F5AD3921534612008BA5EB /* TrackerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2921534612008BA5EB /* TrackerSpy.swift */; };
+		B0F5AD3A21534612008BA5EB /* ViewControllerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD2A21534612008BA5EB /* ViewControllerPresenterSpy.swift */; };
+		B0F5AD3D21534AAC008BA5EB /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD3C21534AAC008BA5EB /* Tracker.swift */; };
+		B0F5AD4021534B7F008BA5EB /* AuthorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD3F21534B7E008BA5EB /* AuthorProvider.swift */; };
+		B0F5AD49215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F5AD46215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m */; };
+		B0F5AD4A215352E0008BA5EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F5AD48215352E0008BA5EB /* GoogleService-Info.plist */; };
+		D53B13996B36B747A15D7841 /* Pods_TouchColorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13180C608B5ABD09D798D1A7 /* Pods_TouchColorTests.framework */; };
+		FD8DB0B1524CC3401AE286FA /* Pods_TouchColorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9574F50EB8BC7C9264CA222 /* Pods_TouchColorUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0BAAADD215334AE002A6803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0BAAAC0215334AE002A6803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0BAAAC7215334AE002A6803;
+			remoteInfo = TouchColor;
+		};
+		B0BAAAE8215334AE002A6803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0BAAAC0215334AE002A6803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0BAAAC7215334AE002A6803;
+			remoteInfo = TouchColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13180C608B5ABD09D798D1A7 /* Pods_TouchColorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchColorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EA1DE8479E92E2B748434A /* Pods-TouchColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColor.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColor/Pods-TouchColor.release.xcconfig"; sourceTree = "<group>"; };
+		42B4247567CE285C5BE2ED7F /* Pods-TouchColorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColorUITests/Pods-TouchColorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		857480D8BA51014473F7E97E /* Pods-TouchColorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColorUITests/Pods-TouchColorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		891BAF1F122CAB62F3F70938 /* Pods-TouchColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColor/Pods-TouchColor.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3EB04FC138CF028B9228F0 /* Pods_TouchColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9574F50EB8BC7C9264CA222 /* Pods_TouchColorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchColorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01394232158D64E001E1454 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B04D4AD32154A3080007D47F /* GameConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		B04D4ADD2154F75D0007D47F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B04D4ADE2154F75D0007D47F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B0BAAAC8215334AE002A6803 /* TouchColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BAAACB215334AE002A6803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0BAAACD215334AE002A6803 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0BAAAD0215334AE002A6803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0BAAAD2215334AE002A6803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0BAAAD5215334AE002A6803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0BAAAD7215334AE002A6803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BAAADC215334AE002A6803 /* TouchColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BAAAE2215334AE002A6803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BAAAE7215334AE002A6803 /* TouchColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BAAAEB215334AE002A6803 /* TouchColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchColorUITests.swift; sourceTree = "<group>"; };
+		B0BAAAED215334AE002A6803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BAAB20215337C5002A6803 /* BoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardDelegate.swift; sourceTree = "<group>"; };
+		B0BAAB21215337C5002A6803 /* GameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		B0BAAB22215337C5002A6803 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		B0BAAB24215337C5002A6803 /* Array+Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Slot.swift"; sourceTree = "<group>"; };
+		B0BAAB25215337C5002A6803 /* Board+SlotDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+SlotDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB26215337C5002A6803 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B0BAAB27215337C5002A6803 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		B0BAAB28215337C5002A6803 /* DifficultyLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		B0BAAB29215337C5002A6803 /* CircleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleType.swift; sourceTree = "<group>"; };
+		B0BAAB2A215337C5002A6803 /* SlotDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotDelegate.swift; sourceTree = "<group>"; };
+		B0BAAB2B215337C5002A6803 /* Game+BoardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+BoardDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB2C215337C5002A6803 /* BoardSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSize.swift; sourceTree = "<group>"; };
+		B0BAAB2D215337C5002A6803 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		B0BAAB2E215337C5002A6803 /* SlotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotLocation.swift; sourceTree = "<group>"; };
+		B0BAAB3E215337E0002A6803 /* Array+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
+		B0BAAB3F215337E0002A6803 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		B0BAAB40215337E0002A6803 /* GameTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		B0BAAB4621533857002A6803 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		B0BAAB4921533857002A6803 /* UIView+CAAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CAAnimation.swift"; sourceTree = "<group>"; };
+		B0BAAB4A21533857002A6803 /* UIView+MoveToSuperview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MoveToSuperview.swift"; sourceTree = "<group>"; };
+		B0BAAB4D21533857002A6803 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		B0BAAB4E21533857002A6803 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		B0BAAB5021533857002A6803 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		B0BAAB5121533857002A6803 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B0BAAB5321533857002A6803 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B0BAAB5521533857002A6803 /* GameViewController+GameOverViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameOverViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB5621533857002A6803 /* GameViewController+MenuViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+MenuViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB5721533857002A6803 /* GameViewController+GameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB5821533857002A6803 /* GameViewController+GameViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameViewDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB5A21533857002A6803 /* GameBoardView+MaxSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameBoardView+MaxSize.swift"; sourceTree = "<group>"; };
+		B0BAAB5B21533857002A6803 /* GameViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewDelegate.swift; sourceTree = "<group>"; };
+		B0BAAB5C21533857002A6803 /* GameBoardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardViewDelegate.swift; sourceTree = "<group>"; };
+		B0BAAB5D21533857002A6803 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		B0BAAB5E21533857002A6803 /* GameView+GameBoardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameView+GameBoardViewDelegate.swift"; sourceTree = "<group>"; };
+		B0BAAB5F21533857002A6803 /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		B0BAAB6021533857002A6803 /* GameBoardView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameBoardView+Subviews.swift"; sourceTree = "<group>"; };
+		B0BAAB6121533857002A6803 /* GameBoardSlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardSlotView.swift; sourceTree = "<group>"; };
+		B0BAAB6221533857002A6803 /* GameBoardView+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameBoardView+Audio.swift"; sourceTree = "<group>"; };
+		B0BAAB6321533857002A6803 /* GameBoardView+TouchHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameBoardView+TouchHandling.swift"; sourceTree = "<group>"; };
+		B0BAAB6521533857002A6803 /* GameViewController+GameAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameAnalytics.swift"; sourceTree = "<group>"; };
+		B0BAAB6621533857002A6803 /* GameViewController+GameKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameKit.swift"; sourceTree = "<group>"; };
+		B0BAAB6821533857002A6803 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B0BAAB6921533857002A6803 /* InfoViewController+AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InfoViewController+AlertController.swift"; sourceTree = "<group>"; };
+		B0BAAB6B21533857002A6803 /* UrlOpener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlOpener.swift; sourceTree = "<group>"; };
+		B0BAAB6D21533857002A6803 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		B0BAAB6E21533857002A6803 /* LogoDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoDescriptionView.swift; sourceTree = "<group>"; };
+		B0BAAB6F21533857002A6803 /* AuthorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		B0BAAB7021533857002A6803 /* LineViewAuthors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineViewAuthors.swift; sourceTree = "<group>"; };
+		B0BAAB7221533857002A6803 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B0BAAB7321533857002A6803 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B0BAAB7621533857002A6803 /* Button+BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+BackgroundColor.swift"; sourceTree = "<group>"; };
+		B0BAAB7721533857002A6803 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		B0BAAB7921533857002A6803 /* CircleView+Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircleView+Circle.swift"; sourceTree = "<group>"; };
+		B0BAAB7A21533857002A6803 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B0BAAB7B21533857002A6803 /* CircleViewDragger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewDragger.swift; sourceTree = "<group>"; };
+		B0BAAB7D21533857002A6803 /* UIFont_Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont_Font.swift; sourceTree = "<group>"; };
+		B0BAAB7E21533857002A6803 /* KeyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
+		B0BAAB7F21533857002A6803 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		B0BAAB8021533857002A6803 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B0BAAB8221533857002A6803 /* GAIDictionaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAIDictionaryFactory.swift; sourceTree = "<group>"; };
+		B0BAAB8321533857002A6803 /* AlertControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerFactory.swift; sourceTree = "<group>"; };
+		B0BAAB8421533857002A6803 /* AlertActionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionFactory.swift; sourceTree = "<group>"; };
+		B0F5AD13215341D9008BA5EB /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		B0F5AD1721534612008BA5EB /* StringLocalizedSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalizedSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1821534612008BA5EB /* AuthorLoginFromUrlSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorLoginFromUrlSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1921534612008BA5EB /* ArrayRandomSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayRandomSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1B21534612008BA5EB /* DifficultyLevelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyLevelSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1C21534612008BA5EB /* TrackerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1E21534612008BA5EB /* GameViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD1F21534612008BA5EB /* GameOverViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewControllerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD2021534612008BA5EB /* StartViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewControllerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD2121534612008BA5EB /* InfoViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewControllerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD2221534612008BA5EB /* MenuViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllerSpec.swift; sourceTree = "<group>"; };
+		B0F5AD2421534612008BA5EB /* FakeAuthorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAuthorProvider.swift; sourceTree = "<group>"; };
+		B0F5AD2521534612008BA5EB /* GAIDictionaryFactoryFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAIDictionaryFactoryFake.swift; sourceTree = "<group>"; };
+		B0F5AD2721534612008BA5EB /* UrlOpenerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlOpenerSpy.swift; sourceTree = "<group>"; };
+		B0F5AD2821534612008BA5EB /* GAITrackerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAITrackerSpy.swift; sourceTree = "<group>"; };
+		B0F5AD2921534612008BA5EB /* TrackerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerSpy.swift; sourceTree = "<group>"; };
+		B0F5AD2A21534612008BA5EB /* ViewControllerPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenterSpy.swift; sourceTree = "<group>"; };
+		B0F5AD3C21534AAC008BA5EB /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		B0F5AD3F21534B7E008BA5EB /* AuthorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorProvider.swift; sourceTree = "<group>"; };
+		B0F5AD41215352A5008BA5EB /* TouchColor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchColor-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0F5AD46215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m"; sourceTree = "<group>"; };
+		B0F5AD47215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.h"; sourceTree = "<group>"; };
+		B0F5AD48215352E0008BA5EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCA67363F5DB89346BB5FCB8 /* Pods-TouchColorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColorTests/Pods-TouchColorTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4DA73D28402AA37A9DF54C3 /* Pods-TouchColorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchColorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchColorTests/Pods-TouchColorTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0BAAAC5215334AE002A6803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A951637F378BF26889C6C4 /* Pods_TouchColor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAAD9215334AE002A6803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53B13996B36B747A15D7841 /* Pods_TouchColorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAAE4215334AE002A6803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8DB0B1524CC3401AE286FA /* Pods_TouchColorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416ADF1FD8371FA1E12A229D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				891BAF1F122CAB62F3F70938 /* Pods-TouchColor.debug.xcconfig */,
+				20EA1DE8479E92E2B748434A /* Pods-TouchColor.release.xcconfig */,
+				E4DA73D28402AA37A9DF54C3 /* Pods-TouchColorTests.debug.xcconfig */,
+				CCA67363F5DB89346BB5FCB8 /* Pods-TouchColorTests.release.xcconfig */,
+				42B4247567CE285C5BE2ED7F /* Pods-TouchColorUITests.debug.xcconfig */,
+				857480D8BA51014473F7E97E /* Pods-TouchColorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63AA849C3987A21C4F30996E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EB04FC138CF028B9228F0 /* Pods_TouchColor.framework */,
+				13180C608B5ABD09D798D1A7 /* Pods_TouchColorTests.framework */,
+				A9574F50EB8BC7C9264CA222 /* Pods_TouchColorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0BAAABF215334AE002A6803 = {
+			isa = PBXGroup;
+			children = (
+				B0BAAACA215334AE002A6803 /* TouchColor */,
+				B0BAAADF215334AE002A6803 /* TouchColorTests */,
+				B0BAAAEA215334AE002A6803 /* TouchColorUITests */,
+				B0BAAAC9215334AE002A6803 /* Products */,
+				416ADF1FD8371FA1E12A229D /* Pods */,
+				63AA849C3987A21C4F30996E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0BAAAC9215334AE002A6803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAAC8215334AE002A6803 /* TouchColor.app */,
+				B0BAAADC215334AE002A6803 /* TouchColorTests.xctest */,
+				B0BAAAE7215334AE002A6803 /* TouchColorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0BAAACA215334AE002A6803 /* TouchColor */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAACB215334AE002A6803 /* AppDelegate.swift */,
+				B04D4AD32154A3080007D47F /* GameConfig.swift */,
+				B0BAAACD215334AE002A6803 /* ViewController.swift */,
+				B01394232158D64E001E1454 /* WebViewController.swift */,
+				B0F5AD45215352B0008BA5EB /* Supporting Files */,
+				B0F5AD3E21534B7E008BA5EB /* Provider */,
+				B0F5AD3B21534AAC008BA5EB /* GoogleAnalytics */,
+				B0F5AD12215341D9008BA5EB /* Models */,
+				B0BAAB4421533857002A6803 /* UI */,
+				B0BAAB3D215337E0002A6803 /* Helpers */,
+				B0BAAB1F215337C5002A6803 /* Logic */,
+				B0BAAACF215334AE002A6803 /* Main.storyboard */,
+				B0BAAAD2215334AE002A6803 /* Assets.xcassets */,
+				B0BAAAD4215334AE002A6803 /* LaunchScreen.storyboard */,
+				B0BAAAD7215334AE002A6803 /* Info.plist */,
+				B0F5AD41215352A5008BA5EB /* TouchColor-Bridging-Header.h */,
+				B04D4AD92154F5FD0007D47F /* Localizable.strings */,
+			);
+			path = TouchColor;
+			sourceTree = "<group>";
+		};
+		B0BAAADF215334AE002A6803 /* TouchColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD2321534612008BA5EB /* Fake */,
+				B0F5AD2621534612008BA5EB /* Spy */,
+				B0F5AD1521534612008BA5EB /* TestCase */,
+				B0BAAAE2215334AE002A6803 /* Info.plist */,
+			);
+			path = TouchColorTests;
+			sourceTree = "<group>";
+		};
+		B0BAAAEA215334AE002A6803 /* TouchColorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAAEB215334AE002A6803 /* TouchColorUITests.swift */,
+				B0BAAAED215334AE002A6803 /* Info.plist */,
+			);
+			path = TouchColorUITests;
+			sourceTree = "<group>";
+		};
+		B0BAAB1F215337C5002A6803 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB20215337C5002A6803 /* BoardDelegate.swift */,
+				B0BAAB21215337C5002A6803 /* GameDelegate.swift */,
+				B0BAAB22215337C5002A6803 /* Board.swift */,
+				B0BAAB23215337C5002A6803 /* Extension */,
+				B0BAAB25215337C5002A6803 /* Board+SlotDelegate.swift */,
+				B0BAAB26215337C5002A6803 /* Game.swift */,
+				B0BAAB27215337C5002A6803 /* Slot.swift */,
+				B0BAAB28215337C5002A6803 /* DifficultyLevel.swift */,
+				B0BAAB29215337C5002A6803 /* CircleType.swift */,
+				B0BAAB2A215337C5002A6803 /* SlotDelegate.swift */,
+				B0BAAB2B215337C5002A6803 /* Game+BoardDelegate.swift */,
+				B0BAAB2C215337C5002A6803 /* BoardSize.swift */,
+				B0BAAB2D215337C5002A6803 /* Circle.swift */,
+				B0BAAB2E215337C5002A6803 /* SlotLocation.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B0BAAB23215337C5002A6803 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB24215337C5002A6803 /* Array+Slot.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B0BAAB3D215337E0002A6803 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB3E215337E0002A6803 /* Array+Random.swift */,
+				B0BAAB3F215337E0002A6803 /* String+Localized.swift */,
+				B0BAAB40215337E0002A6803 /* GameTimer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B0BAAB4421533857002A6803 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4521533857002A6803 /* Presenters */,
+				B0BAAB4721533857002A6803 /* Extensions */,
+				B0BAAB4B21533857002A6803 /* Screens */,
+				B0BAAB7421533857002A6803 /* Components */,
+				B0BAAB7C21533857002A6803 /* Theme */,
+				B0BAAB8121533857002A6803 /* Factory */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B0BAAB4521533857002A6803 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4621533857002A6803 /* ViewControllerPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B0BAAB4721533857002A6803 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4821533857002A6803 /* UIView+CAAnimation */,
+				B0BAAB4A21533857002A6803 /* UIView+MoveToSuperview.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0BAAB4821533857002A6803 /* UIView+CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4921533857002A6803 /* UIView+CAAnimation.swift */,
+			);
+			path = "UIView+CAAnimation";
+			sourceTree = "<group>";
+		};
+		B0BAAB4B21533857002A6803 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4C21533857002A6803 /* GameOver */,
+				B0BAAB4F21533857002A6803 /* Start */,
+				B0BAAB5221533857002A6803 /* Game */,
+				B0BAAB6721533857002A6803 /* Info */,
+				B0BAAB7121533857002A6803 /* Menu */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B0BAAB4C21533857002A6803 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB4D21533857002A6803 /* GameOverViewController.swift */,
+				B0BAAB4E21533857002A6803 /* GameOverView.swift */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		B0BAAB4F21533857002A6803 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB5021533857002A6803 /* StartView.swift */,
+				B0BAAB5121533857002A6803 /* StartViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		B0BAAB5221533857002A6803 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB5321533857002A6803 /* GameViewController.swift */,
+				B0BAAB5421533857002A6803 /* ViewControllerDelegates */,
+				B0BAAB5921533857002A6803 /* Views */,
+				B0BAAB6421533857002A6803 /* ExternalServices */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B0BAAB5421533857002A6803 /* ViewControllerDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB5521533857002A6803 /* GameViewController+GameOverViewControllerDelegate.swift */,
+				B0BAAB5621533857002A6803 /* GameViewController+MenuViewControllerDelegate.swift */,
+				B0BAAB5721533857002A6803 /* GameViewController+GameDelegate.swift */,
+				B0BAAB5821533857002A6803 /* GameViewController+GameViewDelegate.swift */,
+			);
+			path = ViewControllerDelegates;
+			sourceTree = "<group>";
+		};
+		B0BAAB5921533857002A6803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB5A21533857002A6803 /* GameBoardView+MaxSize.swift */,
+				B0BAAB5B21533857002A6803 /* GameViewDelegate.swift */,
+				B0BAAB5C21533857002A6803 /* GameBoardViewDelegate.swift */,
+				B0BAAB5D21533857002A6803 /* GameView.swift */,
+				B0BAAB5E21533857002A6803 /* GameView+GameBoardViewDelegate.swift */,
+				B0BAAB5F21533857002A6803 /* GameBoardView.swift */,
+				B0BAAB6021533857002A6803 /* GameBoardView+Subviews.swift */,
+				B0BAAB6121533857002A6803 /* GameBoardSlotView.swift */,
+				B0BAAB6221533857002A6803 /* GameBoardView+Audio.swift */,
+				B0BAAB6321533857002A6803 /* GameBoardView+TouchHandling.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0BAAB6421533857002A6803 /* ExternalServices */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB6521533857002A6803 /* GameViewController+GameAnalytics.swift */,
+				B0BAAB6621533857002A6803 /* GameViewController+GameKit.swift */,
+			);
+			path = ExternalServices;
+			sourceTree = "<group>";
+		};
+		B0BAAB6721533857002A6803 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB6821533857002A6803 /* InfoViewController.swift */,
+				B0BAAB6921533857002A6803 /* InfoViewController+AlertController.swift */,
+				B0BAAB6A21533857002A6803 /* UrlNavigator */,
+				B0BAAB6C21533857002A6803 /* Views */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		B0BAAB6A21533857002A6803 /* UrlNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB6B21533857002A6803 /* UrlOpener.swift */,
+			);
+			path = UrlNavigator;
+			sourceTree = "<group>";
+		};
+		B0BAAB6C21533857002A6803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB6D21533857002A6803 /* InfoView.swift */,
+				B0BAAB6E21533857002A6803 /* LogoDescriptionView.swift */,
+				B0BAAB6F21533857002A6803 /* AuthorView.swift */,
+				B0BAAB7021533857002A6803 /* LineViewAuthors.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0BAAB7121533857002A6803 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB7221533857002A6803 /* MenuView.swift */,
+				B0BAAB7321533857002A6803 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B0BAAB7421533857002A6803 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB7521533857002A6803 /* UIButton */,
+				B0BAAB7821533857002A6803 /* UIView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B0BAAB7521533857002A6803 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB7621533857002A6803 /* Button+BackgroundColor.swift */,
+				B0BAAB7721533857002A6803 /* Button.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		B0BAAB7821533857002A6803 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB7921533857002A6803 /* CircleView+Circle.swift */,
+				B0BAAB7A21533857002A6803 /* CircleView.swift */,
+				B0BAAB7B21533857002A6803 /* CircleViewDragger.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B0BAAB7C21533857002A6803 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB7D21533857002A6803 /* UIFont_Font.swift */,
+				B0BAAB7E21533857002A6803 /* KeyConstants.swift */,
+				B0BAAB7F21533857002A6803 /* Asset.swift */,
+				B0BAAB8021533857002A6803 /* Color.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B0BAAB8121533857002A6803 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B0BAAB8221533857002A6803 /* GAIDictionaryFactory.swift */,
+				B0BAAB8321533857002A6803 /* AlertControllerFactory.swift */,
+				B0BAAB8421533857002A6803 /* AlertActionFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B0F5AD12215341D9008BA5EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD13215341D9008BA5EB /* Author.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0F5AD1521534612008BA5EB /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD1621534612008BA5EB /* Extension */,
+				B0F5AD1921534612008BA5EB /* ArrayRandomSpec.swift */,
+				B0F5AD1A21534612008BA5EB /* Logic */,
+				B0F5AD1C21534612008BA5EB /* TrackerSpec.swift */,
+				B0F5AD1D21534612008BA5EB /* ViewControllers */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		B0F5AD1621534612008BA5EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD1721534612008BA5EB /* StringLocalizedSpec.swift */,
+				B0F5AD1821534612008BA5EB /* AuthorLoginFromUrlSpec.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B0F5AD1A21534612008BA5EB /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD1B21534612008BA5EB /* DifficultyLevelSpec.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B0F5AD1D21534612008BA5EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD1E21534612008BA5EB /* GameViewControllerSpec.swift */,
+				B0F5AD1F21534612008BA5EB /* GameOverViewControllerSpec.swift */,
+				B0F5AD2021534612008BA5EB /* StartViewControllerSpec.swift */,
+				B0F5AD2121534612008BA5EB /* InfoViewControllerSpec.swift */,
+				B0F5AD2221534612008BA5EB /* MenuViewControllerSpec.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0F5AD2321534612008BA5EB /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD2421534612008BA5EB /* FakeAuthorProvider.swift */,
+				B0F5AD2521534612008BA5EB /* GAIDictionaryFactoryFake.swift */,
+			);
+			path = Fake;
+			sourceTree = "<group>";
+		};
+		B0F5AD2621534612008BA5EB /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD2721534612008BA5EB /* UrlOpenerSpy.swift */,
+				B0F5AD2821534612008BA5EB /* GAITrackerSpy.swift */,
+				B0F5AD2921534612008BA5EB /* TrackerSpy.swift */,
+				B0F5AD2A21534612008BA5EB /* ViewControllerPresenterSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		B0F5AD3B21534AAC008BA5EB /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD3C21534AAC008BA5EB /* Tracker.swift */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		B0F5AD3E21534B7E008BA5EB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD3F21534B7E008BA5EB /* AuthorProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		B0F5AD45215352B0008BA5EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0F5AD47215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.h */,
+				B0F5AD46215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m */,
+				B0F5AD48215352E0008BA5EB /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0BAAAC7215334AE002A6803 /* TouchColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BAAAF0215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColor" */;
+			buildPhases = (
+				EC5B2E1F39E5048561A1F8F5 /* [CP] Check Pods Manifest.lock */,
+				B0BAAAC4215334AE002A6803 /* Sources */,
+				B0BAAAC5215334AE002A6803 /* Frameworks */,
+				B0BAAAC6215334AE002A6803 /* Resources */,
+				CD68296D85EEC84C350366D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchColor;
+			productName = TouchColor;
+			productReference = B0BAAAC8215334AE002A6803 /* TouchColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0BAAADB215334AE002A6803 /* TouchColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BAAAF3215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColorTests" */;
+			buildPhases = (
+				09B069B0C84C8E80BD659A9E /* [CP] Check Pods Manifest.lock */,
+				B0BAAAD8215334AE002A6803 /* Sources */,
+				B0BAAAD9215334AE002A6803 /* Frameworks */,
+				B0BAAADA215334AE002A6803 /* Resources */,
+				30E152BAB1FB8E168B172438 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0BAAADE215334AE002A6803 /* PBXTargetDependency */,
+			);
+			name = TouchColorTests;
+			productName = TouchColorTests;
+			productReference = B0BAAADC215334AE002A6803 /* TouchColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0BAAAE6215334AE002A6803 /* TouchColorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BAAAF6215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColorUITests" */;
+			buildPhases = (
+				A510B6C1258B6128977C5017 /* [CP] Check Pods Manifest.lock */,
+				B0BAAAE3215334AE002A6803 /* Sources */,
+				B0BAAAE4215334AE002A6803 /* Frameworks */,
+				B0BAAAE5215334AE002A6803 /* Resources */,
+				9571FD096FBA4D2DBF141B1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0BAAAE9215334AE002A6803 /* PBXTargetDependency */,
+			);
+			name = TouchColorUITests;
+			productName = TouchColorUITests;
+			productReference = B0BAAAE7215334AE002A6803 /* TouchColorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0BAAAC0215334AE002A6803 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = roy;
+				TargetAttributes = {
+					B0BAAAC7215334AE002A6803 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+					};
+					B0BAAADB215334AE002A6803 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B0BAAAC7215334AE002A6803;
+					};
+					B0BAAAE6215334AE002A6803 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B0BAAAC7215334AE002A6803;
+					};
+				};
+			};
+			buildConfigurationList = B0BAAAC3215334AE002A6803 /* Build configuration list for PBXProject "TouchColor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B0BAAABF215334AE002A6803;
+			productRefGroup = B0BAAAC9215334AE002A6803 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0BAAAC7215334AE002A6803 /* TouchColor */,
+				B0BAAADB215334AE002A6803 /* TouchColorTests */,
+				B0BAAAE6215334AE002A6803 /* TouchColorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0BAAAC6215334AE002A6803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04D4AD72154F5FD0007D47F /* Localizable.strings in Resources */,
+				B0BAAAD6215334AE002A6803 /* LaunchScreen.storyboard in Resources */,
+				B0F5AD4A215352E0008BA5EB /* GoogleService-Info.plist in Resources */,
+				B0BAAAD3215334AE002A6803 /* Assets.xcassets in Resources */,
+				B0BAAAD1215334AE002A6803 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAADA215334AE002A6803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAAE5215334AE002A6803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B069B0C84C8E80BD659A9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchColorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30E152BAB1FB8E168B172438 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TouchColorTests/Pods-TouchColorTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchColorTests/Pods-TouchColorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9571FD096FBA4D2DBF141B1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TouchColorUITests/Pods-TouchColorUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchColorUITests/Pods-TouchColorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A510B6C1258B6128977C5017 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchColorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD68296D85EEC84C350366D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TouchColor/Pods-TouchColor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchColor/Pods-TouchColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5B2E1F39E5048561A1F8F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchColor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0BAAAC4215334AE002A6803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BAAB33215337C5002A6803 /* Board+SlotDelegate.swift in Sources */,
+				B0BAAB8A21533857002A6803 /* StartView.swift in Sources */,
+				B0BAAB42215337E0002A6803 /* String+Localized.swift in Sources */,
+				B0F5AD4021534B7F008BA5EB /* AuthorProvider.swift in Sources */,
+				B0BAAACE215334AE002A6803 /* ViewController.swift in Sources */,
+				B0BAAB8521533857002A6803 /* ViewControllerPresenter.swift in Sources */,
+				B0BAAB31215337C5002A6803 /* Board.swift in Sources */,
+				B0F5AD3D21534AAC008BA5EB /* Tracker.swift in Sources */,
+				B0BAAB9F21533857002A6803 /* UrlOpener.swift in Sources */,
+				B0BAABA521533857002A6803 /* MenuViewController.swift in Sources */,
+				B0BAABAA21533857002A6803 /* CircleViewDragger.swift in Sources */,
+				B0F5AD14215341D9008BA5EB /* Author.swift in Sources */,
+				B0BAABA421533857002A6803 /* MenuView.swift in Sources */,
+				B0BAAB37215337C5002A6803 /* CircleType.swift in Sources */,
+				B0BAAB36215337C5002A6803 /* DifficultyLevel.swift in Sources */,
+				B0BAAB8721533857002A6803 /* UIView+MoveToSuperview.swift in Sources */,
+				B0BAAB3A215337C5002A6803 /* BoardSize.swift in Sources */,
+				B0BAAACC215334AE002A6803 /* AppDelegate.swift in Sources */,
+				B0BAAB41215337E0002A6803 /* Array+Random.swift in Sources */,
+				B0BAAB9821533857002A6803 /* GameBoardSlotView.swift in Sources */,
+				B0BAAB30215337C5002A6803 /* GameDelegate.swift in Sources */,
+				B0BAAB9921533857002A6803 /* GameBoardView+Audio.swift in Sources */,
+				B0BAAB8C21533857002A6803 /* GameViewController.swift in Sources */,
+				B0BAAB9021533857002A6803 /* GameViewController+GameViewDelegate.swift in Sources */,
+				B0BAAB9621533857002A6803 /* GameBoardView.swift in Sources */,
+				B0F5AD49215352E0008BA5EB /* GAIDictionaryBuilder+GAIDictionaryBuilder_Dictionary.m in Sources */,
+				B0BAAB32215337C5002A6803 /* Array+Slot.swift in Sources */,
+				B0BAABA021533857002A6803 /* InfoView.swift in Sources */,
+				B04D4AD42154A3090007D47F /* GameConfig.swift in Sources */,
+				B0BAAB9B21533857002A6803 /* GameViewController+GameAnalytics.swift in Sources */,
+				B0BAAB9A21533857002A6803 /* GameBoardView+TouchHandling.swift in Sources */,
+				B0BAAB34215337C5002A6803 /* Game.swift in Sources */,
+				B0BAAB38215337C5002A6803 /* SlotDelegate.swift in Sources */,
+				B0BAAB3B215337C5002A6803 /* Circle.swift in Sources */,
+				B0BAAB43215337E0002A6803 /* GameTimer.swift in Sources */,
+				B0BAABB021533857002A6803 /* AlertControllerFactory.swift in Sources */,
+				B0BAAB39215337C5002A6803 /* Game+BoardDelegate.swift in Sources */,
+				B0BAAB2F215337C5002A6803 /* BoardDelegate.swift in Sources */,
+				B0BAABB121533857002A6803 /* AlertActionFactory.swift in Sources */,
+				B0BAAB9721533857002A6803 /* GameBoardView+Subviews.swift in Sources */,
+				B0BAAB9321533857002A6803 /* GameBoardViewDelegate.swift in Sources */,
+				B0BAAB8821533857002A6803 /* GameOverViewController.swift in Sources */,
+				B0BAAB8E21533857002A6803 /* GameViewController+MenuViewControllerDelegate.swift in Sources */,
+				B0BAAB8D21533857002A6803 /* GameViewController+GameOverViewControllerDelegate.swift in Sources */,
+				B0BAAB8B21533857002A6803 /* StartViewController.swift in Sources */,
+				B0BAAB9E21533857002A6803 /* InfoViewController+AlertController.swift in Sources */,
+				B0BAABAC21533857002A6803 /* KeyConstants.swift in Sources */,
+				B0BAABAE21533857002A6803 /* Color.swift in Sources */,
+				B0BAABA121533857002A6803 /* LogoDescriptionView.swift in Sources */,
+				B0BAABA221533857002A6803 /* AuthorView.swift in Sources */,
+				B0BAABAD21533857002A6803 /* Asset.swift in Sources */,
+				B0BAABAB21533857002A6803 /* UIFont_Font.swift in Sources */,
+				B0BAABA921533857002A6803 /* CircleView.swift in Sources */,
+				B01394242158D64E001E1454 /* WebViewController.swift in Sources */,
+				B0BAAB8621533857002A6803 /* UIView+CAAnimation.swift in Sources */,
+				B0BAAB9D21533857002A6803 /* InfoViewController.swift in Sources */,
+				B0BAAB35215337C5002A6803 /* Slot.swift in Sources */,
+				B0BAABA721533857002A6803 /* Button.swift in Sources */,
+				B0BAAB8921533857002A6803 /* GameOverView.swift in Sources */,
+				B0BAAB3C215337C5002A6803 /* SlotLocation.swift in Sources */,
+				B0BAABA321533857002A6803 /* LineViewAuthors.swift in Sources */,
+				B0BAAB8F21533857002A6803 /* GameViewController+GameDelegate.swift in Sources */,
+				B0BAAB9121533857002A6803 /* GameBoardView+MaxSize.swift in Sources */,
+				B0BAABA621533857002A6803 /* Button+BackgroundColor.swift in Sources */,
+				B0BAABAF21533857002A6803 /* GAIDictionaryFactory.swift in Sources */,
+				B0BAAB9221533857002A6803 /* GameViewDelegate.swift in Sources */,
+				B0BAAB9C21533857002A6803 /* GameViewController+GameKit.swift in Sources */,
+				B0BAABA821533857002A6803 /* CircleView+Circle.swift in Sources */,
+				B0BAAB9421533857002A6803 /* GameView.swift in Sources */,
+				B0BAAB9521533857002A6803 /* GameView+GameBoardViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAAD8215334AE002A6803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F5AD2C21534612008BA5EB /* AuthorLoginFromUrlSpec.swift in Sources */,
+				B0F5AD3421534612008BA5EB /* MenuViewControllerSpec.swift in Sources */,
+				B0F5AD2E21534612008BA5EB /* DifficultyLevelSpec.swift in Sources */,
+				B0F5AD3921534612008BA5EB /* TrackerSpy.swift in Sources */,
+				B0F5AD3A21534612008BA5EB /* ViewControllerPresenterSpy.swift in Sources */,
+				B0F5AD3221534612008BA5EB /* StartViewControllerSpec.swift in Sources */,
+				B0F5AD2B21534612008BA5EB /* StringLocalizedSpec.swift in Sources */,
+				B0F5AD3621534612008BA5EB /* GAIDictionaryFactoryFake.swift in Sources */,
+				B0F5AD3821534612008BA5EB /* GAITrackerSpy.swift in Sources */,
+				B0F5AD3721534612008BA5EB /* UrlOpenerSpy.swift in Sources */,
+				B0F5AD2D21534612008BA5EB /* ArrayRandomSpec.swift in Sources */,
+				B0F5AD3021534612008BA5EB /* GameViewControllerSpec.swift in Sources */,
+				B0F5AD3521534612008BA5EB /* FakeAuthorProvider.swift in Sources */,
+				B0F5AD3121534612008BA5EB /* GameOverViewControllerSpec.swift in Sources */,
+				B0F5AD2F21534612008BA5EB /* TrackerSpec.swift in Sources */,
+				B0F5AD3321534612008BA5EB /* InfoViewControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BAAAE3215334AE002A6803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BAAAEC215334AE002A6803 /* TouchColorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0BAAADE215334AE002A6803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0BAAAC7215334AE002A6803 /* TouchColor */;
+			targetProxy = B0BAAADD215334AE002A6803 /* PBXContainerItemProxy */;
+		};
+		B0BAAAE9215334AE002A6803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0BAAAC7215334AE002A6803 /* TouchColor */;
+			targetProxy = B0BAAAE8215334AE002A6803 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B04D4AD92154F5FD0007D47F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04D4ADE2154F75D0007D47F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B0BAAACF215334AE002A6803 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0BAAAD0215334AE002A6803 /* Base */,
+				B04D4ADD2154F75D0007D47F /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0BAAAD4215334AE002A6803 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0BAAAD5215334AE002A6803 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0BAAAEE215334AE002A6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		B0BAAAEF215334AE002A6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		B0BAAAF1215334AE002A6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891BAF1F122CAB62F3F70938 /* Pods-TouchColor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchColor/TouchColor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		B0BAAAF2215334AE002A6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EA1DE8479E92E2B748434A /* Pods-TouchColor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchColor/TouchColor-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		B0BAAAF4215334AE002A6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DA73D28402AA37A9DF54C3 /* Pods-TouchColorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchColor.app/TouchColor";
+			};
+			name = Debug;
+		};
+		B0BAAAF5215334AE002A6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA67363F5DB89346BB5FCB8 /* Pods-TouchColorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchColor.app/TouchColor";
+			};
+			name = Release;
+		};
+		B0BAAAF7215334AE002A6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B4247567CE285C5BE2ED7F /* Pods-TouchColorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchColor;
+			};
+			name = Debug;
+		};
+		B0BAAAF8215334AE002A6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857480D8BA51014473F7E97E /* Pods-TouchColorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKMVB2QMYF;
+				INFOPLIST_FILE = TouchColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.TouchColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchColor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0BAAAC3215334AE002A6803 /* Build configuration list for PBXProject "TouchColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BAAAEE215334AE002A6803 /* Debug */,
+				B0BAAAEF215334AE002A6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0BAAAF0215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BAAAF1215334AE002A6803 /* Debug */,
+				B0BAAAF2215334AE002A6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0BAAAF3215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BAAAF4215334AE002A6803 /* Debug */,
+				B0BAAAF5215334AE002A6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0BAAAF6215334AE002A6803 /* Build configuration list for PBXNativeTarget "TouchColorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BAAAF7215334AE002A6803 /* Debug */,
+				B0BAAAF8215334AE002A6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0BAAAC0215334AE002A6803 /* Project object */;
+}

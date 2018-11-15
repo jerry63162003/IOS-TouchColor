@@ -1,0 +1,6 @@
+framework module Pods_TouchColor {
+  umbrella header "Pods-TouchColor-umbrella.h"
+
+  export *
+  module * { export * }
+}
